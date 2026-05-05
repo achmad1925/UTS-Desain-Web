@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+
+    <style>
+        body {
+            background-image: url(background.jpg);
+            background-position: center;
+            background-size: cover;
+            color: #EEF4D4;
+        }
+
+        input {
+            background-image: url(background.jpg);
+            color: #EEF4D4;
+        }
+
+        textarea {
+            background-image: url(background.jpg);
+            color: #EEF4D4;
+        }
+
+        button {
+            background-image: url(background.jpg);
+            color: #EEF4D4;
+        }
+
+        nav a {
+            color: #EC9A29;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulir</h1>
+    </header>
+
+    <nav>
+        <a href="Beranda.html">Beranda</a><br>
+        <a href="Produk.html">Produk</a><br>
+        <a href="Formulir.html">Produk</a>
+    </nav>
+
+    <main>
+        <section>
+            <form action="#" onsubmit="alert('Formulir berhasil dikirim')">
+                <fieldset>
+                    <legend>Data Pribadi</legend>
+                    <label>Nama:</label><br>
+                    <input name="fname" id="fname" placeholder="Masukkan Nama lenagkap"><br><br>
+
+                    <label>No HP:</label><br>
+                    <input name="fname" id="fname" placeholder="08xxxxxxxxxx"><br><br>
+
+                    <label>Email:</label><br>
+                    <input name="email" id="email" placeholder="contoh@gmail.com"><br><br>
+
+                    <label>Jenis Kelamin:</label><br>
+                    <input type="radio" name="gender" id="pria" value="pria">Pria<br>
+                    <input type="radio" name="gender" id="wanita" value="wanita">Wanita<br><br>
+
+                    <label>Minat Produk:</label><br>
+                    <input type="checkbox" name="produk" value="mie goreng">Mie Goreng<br>
+                    <input type="checkbox" name="produk" value="nasi goreng">Nasi Goreng<br>
+                    <input type="checkbox" name="produk" value="rendang">Rendang<br>
+                    <input type="checkbox" name="produk" value="soto babat">Soto Babat<br><br>
+
+                    <label>Pesan/Saran:</label><br>
+                    <textarea rows="6" cols="45" placeholder="Tulis pesan/saran anda untuk UMKM kami"></textarea><br><br>
+
+                    <label>Upload File:</label><br>
+                    <input type="file">
+                </fieldset>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 UMKM Makanan Nusantara</p>
+    </footer>
+</body>
+</html>
